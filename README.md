@@ -1,68 +1,67 @@
-Virtual Drawing Board
-A real-time, hand-gesture-controlled virtual drawing board powered by MediaPipe and OpenCV. This application allows you to draw, erase, and select colors using your index finger — no physical stylus or touchscreen required!
+# Virtual Drawing Board
 
-Demo
-Insert a short GIF or video link demonstrating the project in action.
+A real-time, hand-gesture-controlled virtual drawing board powered by **MediaPipe** and **OpenCV**. This application allows you to draw, erase, and select colors using your index finger — no physical stylus or touchscreen required!
 
-Features
-Real-Time Hand Tracking: Utilizes MediaPipe to detect and track hand gestures via your webcam.
+## Demo
 
-Gesture-Based Drawing: Draw using your index finger with smooth tracking and dynamic control.
+*Insert a short GIF or video link demonstrating the project in action.*
 
-Color Selection: Easily switch between multiple colors using virtual on-screen buttons.
+---
 
-Eraser Mode: "Erase" drawn content by switching to a special eraser gesture or button.
+## Features
 
-Canvas Reset: Clear the entire canvas with a dedicated gesture or trash button.
+- **Real-Time Hand Tracking**: Utilizes MediaPipe to detect and track hand gestures via your webcam.
+- **Gesture-Based Drawing**: Draw using your index finger with smooth tracking and dynamic control.
+- **Color Selection**: Easily switch between multiple colors using virtual on-screen buttons.
+- **Eraser Mode**: "Erase" drawn content by switching to a special eraser gesture or button.
+- **Canvas Reset**: Clear the entire canvas with a dedicated gesture or trash button.
+- **Seamless Interface**: Blends live video with your drawing canvas, creating a mixed-reality whiteboard experience.
 
-Seamless Interface: Blends live video with your drawing canvas, creating a mixed-reality whiteboard experience.
+---
 
-Tech Stack
-Python
+## Tech Stack
 
-OpenCV – for image processing and GUI handling.
+- **Python**
+- **OpenCV** – for image processing and GUI handling.
+- **MediaPipe** – for hand detection and tracking.
+- **NumPy** – for efficient canvas array manipulation.
 
-MediaPipe – for hand detection and tracking.
+---
 
-NumPy – for efficient canvas array manipulation.
+## How It Works
 
-How It Works
-The webcam feed is captured using OpenCV.
+1. The webcam feed is captured using OpenCV.
+2. MediaPipe processes the frame to detect hand landmarks.
+3. If the index finger is raised and tracked:
+   - The system checks if the fingertip is over any UI buttons (colors, eraser, clear).
+   - Otherwise, it draws on a separate black canvas in the chosen color.
+4. The canvas is blended with the live video feed for a smooth overlay effect.
 
-MediaPipe processes the frame to detect hand landmarks.
+---
 
-If the index finger is raised and tracked:
+## Installation
 
-The system checks if the fingertip is over any UI buttons (colors, eraser, clear).
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Bhama-S-Nair/Virtual-Drawing-board.git
+   cd Virtual-Drawing-board
+   ```
 
-Otherwise, it draws on a separate black canvas in the chosen color.
+2. **Install dependencies**
+   ```bash
+   pip install opencv-python mediapipe numpy
+   ```
 
-The canvas is blended with the live video feed for a smooth overlay effect.
+3. **Run the project**
+   ```bash
+   python main.py
+   ```
 
-Installation
-Clone the repository
+---
 
-bash
-Copy
-Edit
-git clone https://github.com/Bhama-S-Nair/Virtual-Drawing-board.git
-cd Virtual-Drawing-board
-Install dependencies
+## Folder Structure
 
-bash
-Copy
-Edit
-pip install opencv-python mediapipe numpy
-Run the project
-
-bash
-Copy
-Edit
-python main.py
-Folder Structure
-text
-Copy
-Edit
+```
 ├── main.py             # Main application script
 ├── README.md           # Project description
 ├── black.png           # Color button images
@@ -71,31 +70,36 @@ Edit
 ├── blue.png
 ├── eraser.png
 ├── trash.png
-Controls
-Draw: Use your index finger in the main screen area.
+```
 
-Change Color: Hover your finger over a color button.
+---
 
-Eraser: Select the eraser tool to remove drawn lines.
+## Controls
 
-Clear Canvas: Hover over the trash icon to wipe the entire board.
+- **Draw**: Use your index finger in the main screen area.
+- **Change Color**: Hover your finger over a color button.
+- **Eraser**: Select the eraser tool to remove drawn lines.
+- **Clear Canvas**: Hover over the trash icon to wipe the entire board.
 
-Applications
-Virtual classrooms
+---
 
-Gesture-based UI control
+## Applications
 
-Interactive whiteboards
+- Virtual classrooms
+- Gesture-based UI control
+- Interactive whiteboards
+- Creative tools for touchless interfaces
 
-Creative tools for touchless interfaces
+---
 
-Credits
-Developed by Bhama S Nair
+## Credits
 
-MediaPipe by Google
+- Developed by [Bhama S Nair](https://github.com/Bhama-S-Nair)
+- MediaPipe by Google
+- OpenCV community
 
-OpenCV community
+---
 
-License
-This project is licensed under the MIT License – see the LICENSE file for details.
+## License
 
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
