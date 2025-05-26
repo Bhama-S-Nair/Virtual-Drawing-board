@@ -4,7 +4,8 @@ A real-time, hand-gesture-controlled virtual drawing board powered by **MediaPip
 
 ## Demo
 
-*Insert a short GIF or video link demonstrating the project in action.*
+![Uploading Screenshot 2025-05-26 225418.png…]()
+
 
 ---
 
